@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order Details</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav>
+        <div class="navi" >
+            <div class="navi_logo">
+                <a href="index.html"><img src="C:\Users\m.lokesh\OneDrive\Desktop\lokiwd\loki-logo.png" width="150"></a>
+                 
+            </div>
+            <div class="navi_properties">
+                <a href="sign.html">login</a>
+                <a href="blogl.html">blog</a>
+                <a href="contactl.html">contact us</a>
+                <a href="servicel.html">service</a>
+                <a href="aboutl.html">about us</a>
+            </div>
+        </div>/   
+    </nav>
+ <div class="bill" style="padding: 10%">
+    <div class="bill_form">
+        <h2>Billing Form</h2>
+        <form name="billing" method="post">
+            <input type="text" name="Name" placeholder="Enter Your Name" required><br>
+            <input type="number" name="Number" placeholder="Phone Number" required><br>
+            <input type="email" name="Email" placeholder="Email" required><br>
+            <textarea placeholder="Delivery Address" name="Address" required></textarea><br>
+            <button type="submit" onclick="window.open('done.html')">Place Order</button>
+			<button type="reset">Refresh</button>
+        </form>
+    </div>
+ </div>
+ <div class="feed">
+	<h2>Write a Review</h2>
+	<div class="feed_form">
+		<form name="googlesheet" method="post">
+			<input type="text" name="Name" placeholder="your name" required><br>
+			<input type="email" name="Email" placeholder="email" required><br>
+			<input type="number" name="Phonenumber" placeholder="contact number" required><br>
+			<textarea rows="6" cols="30" name="Review" placeholder="write your review" requred></textarea><br>
+			<button type="submit">submit</button><br>
+		</form>
+	</div>
+</div>
+<footer>
+    <div class="footer_logo">
+        <a href="#"><img src="loki-logo.png" width="80"</a>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="aboutl.html">About Us</a>
+            <a href="blogl.html">Blogs</a>
+            <a href="servicel.html">Services</a>
+        </div>
+       
+    </div>
+    <div class="docu">
+        <h3>Documents</h3>
+		<a href="">Privacy Policy</a>
+		<a href="">Terms of Use</a>
+		<a href="">Reuse Policy</a>
+    </div> 
+    <div class="social_media">
+        <h3>Follow us</h3>
+        <a href="https://www.facebook.com/profile.php?id=100063830183617" target="_blank"><i class="fa fa-facebook official" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/1stop.ai?igshid=NDk5N2NlZjQ=" target="_blank"><i class="fa fa-instagram official" aria-hidden="true"></i></a>
+    </div> 
+    <div class="Contact">
+        <h3>Contact us</h3>
+        <a href="https://api.whatsapp.com/send?phone=+918247485667" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+		<a href="tel:+918247485667"><i class="fa fa-phone" aria-hidden="true"></i></a>
+		<a href="mailto:2020cse.rd1@svec.edu.in"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    </div> 
+    <hr>
+    <p>Copyright &copy; 29/11/2022 Loki.all rights reserved</p>
+</footer>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	const scriptURL =
+		'https://script.google.com/macros/s/AKfycbwAc_3ie9wuJsMqyaiaFZCOrx93y8RYOYoncTXL4hcVpiOmVTPrv1ybQKyjNfhwC33AkQ/exec'
+	const form = document.forms['billing']
+ 
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, {
+				method: 'POST',
+				body: new FormData(form)
+			})
+			.then(response => alert(
+				"order placed"))
+			.catch(error => console.error('Error!', error.message))
+	})
+ </script>
+</body>
+</html>

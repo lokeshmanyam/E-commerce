@@ -1,0 +1,677 @@
+nav{
+	z-index: 9;
+}
+nav .navi{
+    background-color: mintcream;
+    display: flex;
+    box-shadow: 2px 2px 16px lightgreen;
+}
+nav .navi .navi_logo{
+    width: 50%; 
+}
+nav .navi .navi_properties{
+    width: 50%;
+    margin-top: 50px;
+}
+nav .navi .navi_properties a{
+    text-decoration: none;
+    font-weight:bold;
+    padding: 10px;
+    color: green;
+    margin-left: 25px;
+}
+nav .navi_properties a:hover{
+    color: lightcoral;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.head{
+	padding: 0px;
+    background-image: url("C:/Users/m.lokesh/OneDrive/Desktop/lokiwd/nature2.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    height:80vh;
+}
+.head .head_content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.head .head_content h2{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-align: center;
+     line-height: 50px;
+     font-weight: bolder;
+}
+.head .head_content .btn{
+    margin-top: 20%;
+    text-align: center;
+	margin-left: 45%;
+}
+.head .head_content .btn a{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    border: 2px solid black;
+    border-radius:10px ; 
+    padding: 10px;
+}
+.head .head_content .btn a:hover{
+    background-color: lightcoral;
+    color: black;
+    transition: 0.5s;
+}
+.product {
+    padding: 10px;
+}
+.product h3{
+    text-align: center;
+    font-family: verdana;
+    padding: 15px;
+}
+.product h2{
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: xx-large;
+}
+.product .product_container{
+    display: flex;
+}
+.product .product_container .items{
+    width: 35%;
+    height: auto;
+    padding: 10px;
+}
+.product .product_container .items:hover{
+    box-shadow: 1px 1px 2px 2px black;
+}
+.product .product_container .items .item_img{
+    width: 100%;
+    overflow:hidden;
+	height: 250px;
+}
+.product .product_container .items .item_img img{
+    width: 100%;
+    height: 250px;
+}
+.product .product_container .items .item_content{
+    text-align: center;
+}
+.product.product_container .items .item_content h3{
+    font-family: verdana;
+}
+.product .product_container .items .item_content a{
+    background-color: green;
+    border-radius: 12px;
+    border: 1px solid black;
+    padding: 10px;
+    padding-top: 15px;
+    color: white;
+}
+.product .product_container .items .item_content a:hover{
+    color: black;
+    background-color: lightcoral;
+    transition: 0.5s;
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.product .product_btn a{
+    background-color: green;
+    color: white;
+    border: 3px solid black;
+    padding: 15px;
+    border-radius: 12px;
+}
+.product .product_btn a:hover{
+    background-color: lightcoral;
+    transition: 0.5s;
+    color: black;
+}
+.keypoints h2{
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+}
+.keypoints .key_container{
+    display: flex;
+    margin: 5%;
+}
+.keypoints .key_container .key_content{
+    width: 50%;
+}
+.keypoints .key_container .key_content li{
+    border-left: 2px solid green ;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 1px 1px 2px 2px black;
+}
+.keypoints .key_container .key_content li:hover{
+    background-color: lightcoral;
+    color:black;
+    transition: 0.5s;
+}
+.keypoints .key_container .key_img{
+    margin-left:20px;
+    width: 50%;
+    overflow: hidden;
+    height: auto;
+}
+.keypoints .key_container .key_img img{
+    width: 100%;
+}
+.testi{
+	padding: 50px;
+}
+.testi h2{
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 15px;
+    margin: 5px;
+}
+.test .testi_container{
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+.testi .testi_container .carousel-inner{
+	background-color:lightgreen;
+	box-shadow: none;
+}
+.testi .testi_container .item{
+	width: 100%;
+	padding: 20px;
+	background-color: mintcream;
+	box-shadow: none;
+}
+.testi .testi_container .item .it_img{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+.testi .testi_container .item .it_img img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.testi .testi_container .item .it_content{
+	text-align: center;
+}
+.testi .testi_container .item .it_content h3{
+	padding: 10px;
+	font-family: cosmic,sans-serif;
+}
+.testi .testi_container .item .it_content p{
+	padding: 10px;
+	font-size: 15px;
+	font-family: cosmic,sans-serif;
+}
+.team{
+    padding: 50px;
+}
+.team h2{
+    text-align: center;
+    font-size: xx-large;
+    margin: 3%;
+    font-family: verdana;
+}
+.team .team_container{
+	display:flex;
+}
+.team .team_container .team_video{
+    width: 50%;
+    padding: 10px;
+}
+.team .team_container .team_video iframe{
+    border:lightcoral;
+    width:"50%";
+    outline: none;
+}
+.team .team_container .team_content{
+    width: 50%;
+    padding: 20px;
+    margin-left: 30px;
+    display: flex;
+}
+.team .team_container .team_content p{
+    font-family: verdana;
+    padding: 10px;
+}
+.feed{
+    padding: 50px;
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+.feed h2{
+    font-size: xx-large;
+    text-align: center;
+    font-family: verdana;
+    text-transform: uppercase;
+    padding: 3px;
+    color: black;
+}
+.feed .feed_form{
+    text-align: center;
+}
+.feed .feed_form form{
+    padding: 30px;
+}
+.feed .feed_form form input{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    border-left:3px solid lightgreen;
+    font-family: Verdana;
+}
+.feed .feed_form form textarea{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    border-left: 3px solid lightgreen;
+}
+.feed .feed_form form button{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: green;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+}
+.feed .feed_form form button:hover{
+    color: black;
+    background-color: lightcoral;
+    transition: 0.5s;
+}
+.signin{
+	padding: 50px;
+}
+.signin .si_container{
+	text-align: center;
+	box-shadow: 1px 1px 16px  lightgreen;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 10%;
+	border-left: 4px solid green;
+	border-radius: 12px;
+	background-color: mintcream;
+}
+.signin .si_container form h2{
+	text-align: center;
+	font-family: verdana;
+	padding-bottom: 20px;
+	color: green;
+}
+.signin .si_container form input{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px solid green;
+	box-shadow: 1px 1px 16px  lightgreen;
+}
+.signin .si_container form button{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px solid green ;
+	color: black;
+	background-color: lightcoral;
+}
+.signin .si_container form button:hover{
+	color: white;
+	background-color: lightgreen;
+	transition :0.5s;
+}
+.signin p{
+	text-align: center;
+	padding-top:15px ;
+}
+.signin p a{
+	text-decoration: none;
+}
+.signup{
+	padding: 50px;
+}
+.signup .signup_container h2{
+	font-family: verdana;
+	color: green;
+	padding-top: 2px;
+}
+.signup .signup_container{
+	text-align: center;
+	box-shadow: 1px 1px 16px #D6DBDF;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 10%;
+	border-radius: 12px;
+	border-left: 4px solid green;
+	background-color: mintcream;
+}
+.signup .signup_container form input{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px solid green ;
+	box-shadow: 1px 1px 16px  lightcoral;
+}
+.signup .signup_container form select{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px solid green ;
+	box-shadow: 1px 1px 16px  lightcoral;
+}
+.signup .signup_container form textarea{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px solid green;
+	box-shadow: 1px 1px 16px  lightcoral;
+}
+.signup .signup_container form button{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px solid green;
+	color: black;
+	background-color: lightgreen;
+}
+.signup .signup_container form button:hover{
+	color: white;
+	background-color: lightgreen;
+	transition :0.5s;
+}
+.about{
+	margin-top: 10%;
+}
+.about h2{
+	text-align: center;
+	font-family: verdana;
+	font-weight: bold;
+	color:green;
+	padding: 10px;
+}
+.about p{
+	text-align: center;
+	line-height: 35px;
+	font-family: verdana;
+}
+.cont{
+	padding-top: 10%;
+}
+.cont h2{
+	text-align: center;
+	font-family: verdana;
+	font-weight: bold;
+	color:green;
+	padding: 10px;
+}
+.cont .location{
+	border: 2px solid green;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.cont .location iframe{
+	width: 100%;
+	outline: none;
+}
+.cont .contact_info p{
+	font-family: verdana;
+	line-height: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+.blog{
+	padding-top: 8%;
+}
+.blog h2{
+	font-family: verdana;
+	text-align: center;
+	padding: 12px;
+	font-weight: bold;
+}
+.blog .product_container{
+	display: flex;
+}
+.blog .product_container .item{
+	width: 33.33%;
+	height: auto;
+	padding: 15px;
+}
+.blog .product_container .item:hover{
+	box-shadow: 2px 2px 19px black;
+	background-color:lightcoral;
+}
+.blog .product_container  .item .item_img{
+	width: 100%;
+	overflow: hidden;
+	height: 250px;
+}
+.blog .product_container .item .item_img img{
+	width: 100%;
+	height: 250px;
+}
+.blog .product_container .item .item_content{
+	text-align: center;
+}
+.blog .product_container .item .item_content h3{
+	font-family: verdana;
+	padding: 20px;
+}
+.blog .product_container .item .item_content p{
+	font-family: verdana;
+	padding: 20px;
+}
+.blog .product_container .item .item_content a{
+	text-decoration: none;
+	border-radius: 12px;
+	background-color:lightgreen ;
+	color: black;
+	padding-top: 10px;
+	padding: 10px 20px;
+	border: none;
+}
+.blog .product_container .item .item_content a:hover{
+	color: white;
+	background-color: lightcoral ;
+	transition: 0.5s;
+}
+.blog .product_btn{
+	margin-top: 50px;
+	text-align: center;
+}
+.blog .product_btn a{
+	text-decoration: none;
+	border-radius: 12px;
+	background-color: green;
+	color: black;
+	padding-top: 10px;
+	padding: 10px 20px;
+	border: none;
+}
+.blog .product_btn a:hover{
+	color: white;
+	background-color:lightcoral;
+	transition: 0.5s;
+}
+.bill{
+	text-align: center;
+}
+.bill .bill_form{
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	box-shadow: 1px 1px 16px rgb(213, 246, 213);
+	border-left: lightgreen;
+	border-radius: 12px;
+	background-color: rgb(208, 250, 208);
+	color:green;
+}
+.bill .bill_form form input{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px lightgreen;
+	box-shadow: 1px 1px 16px mintcream;
+	width: 50%;
+}
+.bill .bill_form form textarea{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	border-left:2px lightgreen;
+	box-shadow: 1px 1px 16px mintcream;
+	width: 50%;
+}
+.bill .bill_form form button{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	color: black;
+	background-color:lightgreen;
+	text-transform: capitalize;
+}
+.bill .bill_form form button:hover{
+	color: white;
+	background-color:lightcoral;
+	transition: 0.5s;
+}
+.redi{
+	padding-top: 10%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.redi h2{
+	font-size: 20px;
+	font-family: verdana;
+	padding: 30px;
+}
+.redi a{
+	text-decoration: none;
+	color:black
+}
+.redi a:hover{
+	transition: 0.5s;
+	color:lightgreen;
+	text-decoration: none;
+}
+footer{
+    background-color: lightgreen(220,220,220);
+    padding: 50px;
+}
+footer .footer_logo{
+    text-align: center;
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    font-family: verdana;
+    padding: 10px;
+    color: black;
+}
+footer .pages a{
+    text-decoration: none;
+    font-family: verdana;
+    color: green;
+    padding: 10px;
+}
+footer .pages a:hover{
+    color: lightcoral;
+    transition: 0.5s;
+}
+footer .docu{
+    text-align: center;
+}
+footer .docu h3{
+    font-family: verdana;
+    padding: 10px;
+    color: black;
+}
+footer .docu a{
+    text-decoration: none;
+    font-family: verdana;
+    color: green;
+    padding: 10px;
+}
+footer .docu a:hover{
+    color: lightcoral;
+    transition: 0.5s;
+}
+footer .social_media{
+    text-align: center;
+}
+footer .social_media h3{
+    font-family: verdana;
+    padding: 10px;
+    color: black;
+}
+footer .social_media a{
+    font-family:verdana;
+    color: green;
+    padding: 10px;
+    text-decoration: none;
+}
+footer .social_media a:hover{
+    color: lightcoral;
+    transition: 0.5s;
+}
+footer .Contact{
+    text-align: center;
+}
+footer .Contact h3{
+    font-family: verdana;
+    padding: 10px;
+    color: black;
+}
+footer .Contact a{
+    font-family: verdana;
+    color: green;
+    text-decoration: none;
+    padding: 10px;
+}
+footer .Contact a:hover{
+    color: lightcoral;
+    transition: 0.5s;
+}
+footer p{
+    text-align: center;
+}
